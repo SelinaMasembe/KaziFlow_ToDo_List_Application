@@ -4,6 +4,12 @@
 
 KaziFlow is a context-aware task management application that helps you organize your work based on energy levels and task status. Built with a modern tech stack, it provides an intuitive Kanban board interface to manage tasks across different stages: Backlog, Today, In Progress, Review, and Done.
 
+## 👩‍💻 Developer
+
+**Wanyana Selina Masembe**  
+Software Engineering - Year 3  
+Makerere University
+
 ## 🎯 Features
 
 - **Energy-Based Task Organization** - Categorize tasks by effort level (Low, Medium, High)
@@ -217,6 +223,12 @@ python smoke_test.py
 ## 📝 License
 
 © 2025 KaziFlow
+
+## 👩‍💻 Author
+
+**Wanyana Selina Masembe**  
+Software Engineering, Year 3  
+Makerere University
 
 ## 🤝 Contributing
 
