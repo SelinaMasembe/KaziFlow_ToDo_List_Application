@@ -13,7 +13,7 @@ Makerere University
 ## 🎯 Features
 
 - **Energy-Based Task Organization** - Categorize tasks by effort level (Low, Medium, High)
-- **Kanban Board Interface** - Visual workflow with drag-and-drop functionality
+- **Kanban Board Interface** - Visual workflow
 - **Tag System** - Organize tasks with custom tags
 - **Real-time Updates** - Instant synchronization across all views
 - **Responsive Design** - Works seamlessly on desktop and mobile
@@ -22,26 +22,26 @@ Makerere University
 ## 🏗️ Tech Stack
 
 ### Frontend
+
 - **React 19** - UI library
 - **TypeScript** - Type-safe JavaScript
 - **Vite** - Fast build tool and dev server
 - **Tailwind CSS 4** - Utility-first CSS framework
-- **Radix UI** - Accessible component primitives
-- **TanStack Query** - Data fetching and state management
 - **React Router** - Client-side routing
 - **Lucide React** - Icon library
 - **Sonner** - Toast notifications
 
 ### Backend
+
 - **FastAPI** - Modern Python web framework
 - **SQLModel** - SQL database ORM with Pydantic models
-- **SQLite/PostgreSQL** - Database (configurable)
+- **SQLite** - Database (configurable)
 - **Uvicorn** - ASGI server
 - **Python 3.11+** - Programming language
 
 ## 📁 Project Structure
 
-```
+```text
 AIBOS/
 ├── BACKEND/
 │   ├── app/
@@ -105,53 +105,63 @@ AIBOS/
 ### Backend Setup
 
 1. Navigate to the backend folder:
+
 ```powershell
 cd BACKEND
 ```
 
-2. Create a virtual environment:
+1. Create a virtual environment:
+
 ```powershell
 python -m venv .venv
 .venv\Scripts\Activate.ps1  # Windows
 # source .venv/bin/activate  # Linux/Mac
 ```
 
-3. Install dependencies:
+1. Install dependencies:
+
 ```powershell
 pip install -r requirements.txt
 ```
 
-4. Create your `.env` file:
+1. Create your `.env` file:
+
 ```powershell
 Copy-Item .env.example .env -Force
 ```
 
-5. Run the server:
+1. Run the server:
+
 ```powershell
 ./run.ps1
 ```
 
 The backend API will be available at [http://localhost:8000](http://localhost:8000)
+
 API documentation: [http://localhost:8000/docs](http://localhost:8000/docs)
 
 ### Frontend Setup
 
 1. Navigate to the frontend folder:
+
 ```powershell
 cd FRONTEND/my-todo_app
 ```
 
-2. Install dependencies:
+1. Install dependencies:
+
 ```powershell
 npm install
 ```
 
-3. Create your `.env.local` file:
+1. Create your `.env.local` file:
+
 ```powershell
 Copy-Item .env.example .env.local -Force
 ```
 
-4. Start the development server:
+1. Start the development server:
+
 ```powershell
 npm run dev
 ```
@@ -179,6 +189,7 @@ Copy `.env.example` to `.env.local`:
 ## 📡 API Endpoints
 
 ### Tasks
+
 - `GET /api/tasks` — List all tasks
 - `POST /api/tasks` — Create a new task
 - `GET /api/tasks/{id}` — Get a specific task
@@ -186,15 +197,18 @@ Copy `.env.example` to `.env.local`:
 - `DELETE /api/tasks/{id}` — Delete a task
 
 ### Tags
+
 - `GET /api/tags` — List all tags
 - `POST /api/tags` — Create a new tag
 
 ### Health Check
+
 - `GET /healthz` — Health check endpoint
 
 ## 🧪 Testing
 
 Run backend smoke tests:
+
 ```powershell
 cd BACKEND
 python smoke_test.py
